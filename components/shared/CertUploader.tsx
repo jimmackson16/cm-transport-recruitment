@@ -46,12 +46,12 @@ export function CertUploader({ certificateUrl, onFieldChange, setFiles }: CertUp
       ) : (
         <div className="flex-center flex-col py-5 text-grey-500">
           <img src="/assets/icons/upload.svg" width={77} height={77} alt="file upload" />
-          <h3 className="mb-2 mt-2 text-sm">Drag A Level/BTEC or Equivalent from computer here (Not required)</h3>
+          <h3 className="mb-2 mt-2 text-sm text-center">Drag A Level/BTEC or Equivalent from computer here (Not required)</h3>
           <p className="text-sm mb-4">Please upload your transcript or your certificates as a single file</p>
           <p className="text-sm mb-4">Note: This is only to be considered for senior roles</p>
           <p className="text-sm mb-4">PDF,JPEG,PNG (Max 32MB)</p>
-          <Button type="button" className="rounded-full">
-          Select A Level/BTEC or equivalent from computer (Not required)
+          <Button type="button" className="rounded-full w-[75%] md:w-full text-xs">
+          Upload A Level/BTEC transcript/cert (Not required)
           </Button>
         </div>
       )}
