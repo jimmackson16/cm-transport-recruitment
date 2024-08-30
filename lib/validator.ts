@@ -11,7 +11,7 @@ export const employeeFormSchema = z.object({
   niNumber: z.string().min(2, 'Enter your NI number').max(9),
   utrNumber: z.string(),
   desiredStart: z.date(),
-  passUrl:z.string(),
+  passUrl:z.string().min(2,'Please upload your right to work ID'),
   certificateUrl: z.string(),
 })
 

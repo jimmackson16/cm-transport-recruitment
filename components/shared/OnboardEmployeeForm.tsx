@@ -18,6 +18,7 @@ import { useRouter } from "next/navigation"
 import { IEmployee } from "@/lib/database/models/employee.model"
 import { CertUploader } from "./CertUploader"
 import { createEmployee } from "@/lib/actions/employee.actions"
+import toast from 'react-hot-toast'
 
 
 
@@ -46,6 +47,7 @@ const OnboardEmployeeForm = ({ employee }: EmployeeFormProps) => {
       const uploadedImages = await startUpload(files)
 
       if(!uploadedImages) {
+        toast.error("Please upload your right to work ID")
         return
       }
 
