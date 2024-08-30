@@ -51,7 +51,7 @@ export function CertUploader({ certificateUrl, onFieldChange, setFiles }: CertUp
           <p className="text-sm mb-4">Note: This is only to be considered for senior roles</p>
           <p className="text-sm mb-4">PDF,JPEG,PNG (Max 32MB)</p>
           <Button type="button" className="rounded-full">
-          Select A Level/BTEC or Equivalent from computer (Not required)
+          Select A Level/BTEC or equivalent from computer (Not required)
           </Button>
         </div>
       )}
